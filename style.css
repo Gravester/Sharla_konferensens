@@ -1,4 +1,23 @@
 :root {
-    --primary-color: #3498db;
-    --secondary-color: #ffff;
+    --header-lightgreen: #74F1BF;
+    --header-lightblue: #9BF8EE;
+    --main-green: #9BF8AA;
+    --main-gray: #98B0B0;
+
+    
+}
+
+.header {
+    display: flex;
+    align-content: center;
+
+    border: dashed 1px pink;
+}
+
+.main {
+
+}
+
+.footer {
+
 }
