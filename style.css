@@ -9,9 +9,9 @@
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-* {
+/* * {
     border: dashed 1px hotpink;
-}
+} */
 
 body{
     margin: 0;
@@ -21,9 +21,9 @@ body{
 .header {
     display: flex;
     justify-content: center;
-    position: fixed;
     width: 100%;
     top: 0;
+    position: sticky;
 
     background: linear-gradient(90deg,rgb(133, 184, 204) 0%, rgba(217, 211, 180, 1) 100%);
 
@@ -41,17 +41,54 @@ body{
 }
 
 .main {
-
+    
     /* background: var(--main-gray); */
     background: #5b92a8;
+    
+    background: linear-gradient(360deg,rgba(91, 146, 168, 1) 0%, rgba(198, 224, 155, 1) 100%);
+    padding: 1em 1em 1em 1em;
+    height: 100%;
+}
 
-background: linear-gradient(360deg,rgba(91, 146, 168, 1) 0%, rgba(198, 224, 155, 1) 100%);
+/* .main-contents {
+    margin: 2em 2em 2em 2em;
+} */
+
+.konf-i-gtb {
+    display: flex;
+    justify-content: center;
+}
+
+.dagar {
+    border: 1px solid black;
+    margin-top: 1em;
+    padding: 0.5em 0.5em 0.5em 0.8em;
+    border-radius: 0.5em;
+}
+
+.parent-boka {
+    display: flex;
+    justify-content: center;
+}
+
+.boka {
+    border: 1px solid black;
+    margin-top: 1em;
+    padding: 0.5em 0.5em 0.5em 0.8em;
+
+    border-radius: 0.5em;
+    width: 8em;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+
+    background-color: var(--footer-title);
+    letter-spacing: 0.05em;
 
 }
 
-.main-contents {
-    padding-top: 60px;
-    margin: 2em;
+.boka:hover {
+    transform: scale(1.3);
 }
 
 .footer {
@@ -65,4 +102,5 @@ background: linear-gradient(360deg,rgba(91, 146, 168, 1) 0%, rgba(198, 224, 155,
 
 .footer-text {
     margin: 1em;
+
 }
