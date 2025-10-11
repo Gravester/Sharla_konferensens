@@ -1,0 +1,38 @@
+.main {
+    
+    /* background: var(--main-gray); */
+    background: #5b92a8;
+    
+    background: linear-gradient(360deg,rgba(91, 146, 168, 1) 0%, rgba(198, 224, 155, 1) 100%);
+    padding: 1em 1em 1em 1em;
+    height: 100%;
+}
+
+
+.konf-i-gtb {
+    display: flex;
+    justify-content: center;
+}
+
+.dagar {
+    border: 1px solid black;
+    margin-top: 1em;
+    padding: 0.5em 0.5em 0.5em 0.8em;
+    border-radius: 0.5em;
+
+    /* background-color: var(--days-background); */
+    background-color: rgba(198, 235, 198, 0.8); /* 0.8 = 80% solid color o 20% transparent */
+}
+
+.dagar:hover {
+    transform: translateY(-10px);
+}
+
+.dagar-margin {
+    div > h4 {
+        margin-bottom: 0;
+    }
+    div > p {
+        margin-top: 0;
+    }
+}
