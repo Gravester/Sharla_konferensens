@@ -7,14 +7,17 @@
     padding: 1em 1em 1em 1em;
     height: 100%;
 
-    
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
 }
 
-.main-contents{
+/* .main-contents{
     display: flex;
     flex-direction: column;
     align-items: center;
-}
+} */
 
 .konf-i-gtb {
     display: flex;
@@ -51,4 +54,14 @@
     div > p {
         margin-top: 0;
     }
+}
+
+
+.vilka-är-vi {
+    border: dashed 1px black;
+    border-radius: 0.5em;
+    background-color: var(--main-gray);
+    padding: 1em 1em;
+    margin-top: 4em;
+    text-align: center;
 }
