@@ -1,0 +1,40 @@
+main {
+     
+}
+
+.boka-dagar {
+    display: flex;
+    justify-content: center;
+}
+
+.check-container{
+    display: grid;
+    grid-template-columns: 80px 400px;
+
+    margin: 2em;
+
+    
+}
+
+/* .check-container input:checked ~ .check-mark:after {
+  display: block;
+} */
+
+.check-box {
+    height: 20px;
+    width: 20px;
+
+    background-color: #eee;
+}
+
+/* .check-mark:after {
+    content: "";
+    position: absolute;
+    display: none;
+} */
+
+
+
+.check-container:hover input ~ .check-mark{ /* on hover = gray background */
+    background-color: #e4dddd;
+}
