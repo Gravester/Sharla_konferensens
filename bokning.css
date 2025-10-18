@@ -1,24 +1,52 @@
 main {
-     
+    min-height: 100vh;
+}
+
+body {
+    background: linear-gradient(360deg,rgba(91, 146, 168, 1) 0%, rgba(198, 224, 155, 1) 100%);
+    margin: 0;
+}
+
+.title-boka {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-top: 1em;
+}
+
+.dagar-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
 }
 
 .boka-dagar {
     display: flex;
     justify-content: center;
-}
+    flex-direction: column;
+    
+    border: 1px solid black;
+    border-radius: 0.5em;
+    padding: 2em;
+    min-width: 25em;
 
-.check-container{
-    display: grid;
-    grid-template-columns: 80px 400px;
-
-    margin: 2em;
-
+    background: linear-gradient(360deg,rgb(205, 196, 211) 0%, rgb(212, 171, 243) 100%);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); 
     
 }
 
-/* .check-container input:checked ~ .check-mark:after {
-  display: block;
-} */
+.check-container{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    border-top: 1px solid black;
+
+}
+
 
 .check-box {
     height: 20px;
@@ -27,14 +55,92 @@ main {
     background-color: #eee;
 }
 
-/* .check-mark:after {
-    content: "";
-    position: absolute;
-    display: none;
-} */
+.check-label {
+    font-size: 1.3rem;
 
-
-
-.check-container:hover input ~ .check-mark{ /* on hover = gray background */
-    background-color: #e4dddd;
 }
+
+.matval-container{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+
+    border: 1px solid black;
+    border-radius: 0.5em;
+    background: linear-gradient(360deg,rgb(205, 196, 211) 0%, rgb(212, 171, 243) 100%);
+    min-height: 15em;
+    max-width: 25em;
+    padding: 2em;
+    margin: 2em auto; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    gap: 1em;
+}
+
+.matval-column{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    gap: 1em; 
+}
+
+.matval-column input[type="text"] {
+    width: 100%;
+    height: 1.5em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.matval-column input[type="radio"] {
+    width: auto;
+    height: auto;
+    accent-color: #4CAF50;
+}
+
+
+
+.form-container {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+
+    border: 1px solid black;
+    border-radius: 0.5em;
+    background: linear-gradient(360deg,rgb(205, 196, 211) 0%, rgb(212, 171, 243) 100%);
+    min-height: 25em;
+    max-width: 25em;
+    padding: 2em;
+    
+    margin: 2em auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.form-container label {
+    display: block;
+    margin-top: 1em;
+}
+
+.form-container input {
+    width: 60%;
+    padding: 0.5em;
+    margin-top: 0.3em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input:invalid {
+    border: 2px solid red;
+    background-color: #ffe6e6;
+}
+
+input:valid {
+    border: 2px solid green;
+    background-color: #e6ffe6;
+}
+
+.buttom-container {
+    margin-top: 1em;
+    text-align: center;
+}
+

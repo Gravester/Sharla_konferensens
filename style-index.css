@@ -10,6 +10,8 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+    justify-content: center;
+
 
 }
 
@@ -24,11 +26,16 @@
     justify-content: center;
 }
 
+.konf-beskrivning{
+    display: flex;
+    max-width: 30em;
+}
+
 
 .dagar-container{
     display: flex;
     flex-wrap: wrap;
-
+    justify-content: center;
 }
 .dagar {
 
@@ -64,4 +71,5 @@
     padding: 1em 1em;
     margin-top: 4em;
     text-align: center;
+    max-width: 50em;
 }

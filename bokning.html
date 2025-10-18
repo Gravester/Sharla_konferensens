@@ -27,49 +27,128 @@
             </nav>
             </div>
         </div>
+    </header>
 
     <main>
-        <div class="boka-dagar">
-            <h3>Boka dina dag(ar)</h2>
+
+        <div class="title-boka">
+            <h3 >Boka</h2>
+               
         </div>
 
-        <label class="check-container">
+        <div class="dagar-container">
+            
+
+            <div class="boka-dagar">
+
+            <h3> Dagar | Innehåll</h3>
+
+            <label class="check-container">
+                <input type="checkbox" class="check-box"> 
+                <span class="check-mark"></span>
+                <span class="check-label">Fredag</span>
+                
+                <ul>
+                    <li>Front-End</li>
+                    <li>Javascript</li>
+                    <li>CSS</li>
+                    <li>Ai</li>
+                    <p>2025-10-17</p>
+                </ul>
+                
+            </label>
+
+                <label class="check-container">
             <input type="checkbox" class="check-box"> 
-            <span class="check-mark"> TISDAG </span>
-            <p> test </p>
+            <span class="check-mark"></span>
+            <span class="check-label">Lördag</span>
+                <ul>
+                    <li>Half-stack</li>
+                    <li>Full-stack</li>
+                    <li>International Dev</li>
+                    <li>Future</li>
+                    <p>2025-10-18</p>
+                </ul>
+            
         </label>
 
         <label class="check-container">
             <input type="checkbox" class="check-box"> 
-            <span class="check-mark"> ONSDAG </span>
+            <span class="check-mark"></span>
+            <span class="check-label">Söndag</span>
+                <ul>
+                    <li>React</li>
+                    <li>Vue</li>
+                    <li>Work Together</li>
+                    <li>Dev Market</li>
+                    <p>2025-10-19</p>
+                </ul>
         </label>
+            </div>
+        </div>
+        <form>
+            <div class="matval-container">
+                <h3>Matval</h3>
+                
+                <div class="matval-column">
+                
+                    <label>
+                        <input type="radio" name="mat" id="kött" required>Kött
+                    </label>
+                    <label>
 
+                    <input type="radio" name="mat" value="fisk">Fisk
+                    </label>
 
-        <label class="check-container">
-            <input type="checkbox" class="check-box"> 
-            <span class="check-mark"> TORSDAG </span>
-        </label>
+                    <label>
+                    <input type="radio" name="mat" value="vegetarisk">Vegetarisk
+                    </label>
 
-         </label>
+                    <label for="fname">Allergier?</label>
+                    <input type="text" id="allg" name="allg">
+
+                
+                </div>
+
+            </div>
+
+        <div class="form-container">
+            <h3>Kontakt</h3> 
+            
+                <label for="fname">Förnamn:</label>
+                <input type="text" id="fname" name="fname" required minlength="2"><br>
+
+                <label for="ename">Efternamn:</label>
+                <input type="text" id="ename" name="ename" required minlength="3"><br>
+
+                <label for="ename">Adress:</label>
+                <input type="text" id="adress" name="adress" required><br>
+
+                <label for="ename">E-postadress:</label>
+                <input type="email" id="postadress" name="postadress" required>
+
+                <div class="buttom-container">
+                <button type="submit">Skicka</button>
+                </div>
+        </div>
+    </form>
+        
         
 
-        
+
     </main>
-
-
-
-
 
 
     <footer class="footer">
         <div class="footer-text">
             <div>
                 Kontakt info: <br>
-                Konferens@GÖTEBORG.se
+                Konferens@göteborg.se
             </div>
             <div>
-                Hur vi Hanterar dina Cookies
+                Hur vi hanterar dina Cookies
             </div>
+            
         </div>
     </footer>
 </body>
